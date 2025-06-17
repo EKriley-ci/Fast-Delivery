@@ -150,7 +150,7 @@ function renderFooter() {
             </nav>
         </div>
         <hr>
-        <a href="#" class="copy">&copy; 2025 mehin victoire - tous droits réservés</a>
+        <a href="#" class="copy">&copy; 2025 Fast Delivery - tous droits réservés</a>
     `;
 }
 
