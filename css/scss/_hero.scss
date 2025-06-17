@@ -20,3 +20,32 @@
         }
     }
 }
+@include mobile {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+
+    .text-content {
+      align-items: center;
+      gap: 20px;
+
+      h1 {
+        font-size: 2rem;
+        line-height: 2.6rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .illustration {
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

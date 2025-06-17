@@ -24,3 +24,90 @@
         }
     }
 }
+
+@include mobile {
+  .section {
+    padding: 2rem 1.5rem;
+
+    .head {
+      text-align: center;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .content {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .primary-btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .cart {
+    padding: 1rem;
+    gap: 1rem;
+    text-align: center;
+
+    h4 {
+      font-size: 1.1rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+    }
+  }
+}
+@include mobile {
+  .service {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    max-width: 100%;
+    box-shadow: none;
+    border-radius: 0;
+    gap: 2rem;
+
+    .textContent {
+      align-items: center;
+      text-align: center;
+      gap: 1rem;
+
+      h3 {
+        font-size: 1.2rem;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+        br {
+          display: none; // optionnel pour éviter les sauts de ligne forcés sur petit écran
+        }
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      .primary-btn {
+        width: 100%;
+        max-width: 250px;
+      }
+    }
+
+    .illustration {
+      max-width: 100%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

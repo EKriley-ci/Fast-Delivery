@@ -1,3 +1,9 @@
+@mixin mobile {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
 @import 'scss/reset';
 
 // components
@@ -7,3 +13,4 @@
 @import 'scss/avisClient';
 @import 'scss/footer';
 @import 'scss/contact';
+@import 'scss/livraison';

@@ -85,3 +85,129 @@
         }
     }
 }
+
+@include mobile {
+  .avisClient {
+    padding: 2rem 1.5rem;
+
+    .content {
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+
+      .illustration {
+        max-width: 80%;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .aside-content {
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
+
+        h3 {
+          font-size: 1.2rem;
+        }
+
+        h2 {
+          font-size: 1.4rem;
+        }
+
+        .reviewsContainer {
+          max-width: 100%;
+          .cleintsBox {
+            padding: 1.2rem;
+            font-size: 0.95rem;
+
+            .profil {
+              flex-direction: row;
+              align-items: center;
+              gap: 10px;
+
+              .img {
+                width: 40px;
+                height: 40px;
+              }
+
+              .name {
+                font-size: 1rem;
+              }
+
+              img {
+                width: 100px;
+                height: auto;
+              }
+            }
+
+            .message {
+              font-size: 1rem;
+
+              &::before,
+              &::after {
+                content: none; // facultatif si ça devient trop chargé
+              }
+            }
+          }
+        }
+
+        .slide-controler {
+          justify-content: center;
+
+          button {
+            padding: 0.8rem;
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+}
+@include mobile {
+  .value {
+    padding: 2rem 1.5rem;
+
+    .head {
+      text-align: center;
+        max-width: 310px;
+      .title {
+        font-size: 1.4rem;
+      }
+
+      .subtitle {
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+
+      .cart {
+        text-align: center;
+        padding: 1rem;
+        border-radius: 15px;
+        max-width: 310px;
+        img {
+          width: 100%;
+          max-width: 220px;
+          height: auto;
+        }
+
+        h4 {
+          font-size: 1.2rem;
+          margin-top: 0.5rem;
+        }
+
+        p {
+          font-size: 1rem;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}

@@ -7,8 +7,8 @@ function renderHeader() {
     if (!header) return;
 
     header.innerHTML = `
-        <div class="logo">
-        <svg width="204" height="48" viewBox="0 0 204 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="header-container">
+            <div class="logo"><svg width="100%" height="48" viewBox="0 0 204 48" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M42.575 2.15414L43.3309 0.0754057C46.9505 -0.279977 47.757 0.655342 49.3781 2.15414L48.6222 5.17775C46.603 3.31204 45.372 2.46411 42.575 2.15414Z" fill="url(#paint0_linear_123_246)"/>
     <path d="M41.819 2.15414L42.575 0.0754057C38.4138 -0.0796507 36.4558 0.837821 33.1262 2.91002L33.6931 3.8549C36.6379 2.48122 38.3155 1.79283 41.819 2.15414Z" fill="url(#paint1_linear_123_246)"/>
     <path d="M32.7482 4.42183L31.9923 3.47695C28.7127 5.5623 27.2905 7.40104 24.6223 10.469L25.1892 11.6029C27.7073 8.23427 29.141 6.37427 32.7482 4.42183Z" fill="url(#paint2_linear_123_246)"/>
@@ -52,26 +52,41 @@ function renderHeader() {
     </linearGradient>
     </defs>
 </svg>
-
+</div>
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="header-nav" id="headerNav">
+                <ul>
+                    <li class="link ${currentPage === "index.html" || currentPage === "" ? "active" : ""}">
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li class="link ${currentPage === "a_propos.html" ? "active" : ""}">
+                        <a href="a_propos.html">À propos</a>
+                    </li>
+                    <li class="link ${currentPage === "contact.html" ? "active" : ""}">
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a href="livraison.html">
+                    <button class="primary-btn">Livraison</button>
+                </a>
+            </nav>
         </div>
-        <nav class="header-nav">
-            <ul>
-                <li class="link ${currentPage === "index.html" || currentPage === "" ? "active" : ""}">
-                    <a href="index.html">Accueil</a>
-                </li>
-                <li class="link ${currentPage === "a_propos.html" ? "active" : ""}">
-                    <a href="a_propos.html">à propos</a>
-                </li>
-                <li class="link ${currentPage === "contact.html" ? "active" : ""}">
-                    <a href="contact.html">contact</a>
-                </li>
-            </ul>
-            <a href="livraison.html">
-                <button class="primary-btn">livraison</button>
-            </a>
-        </nav>
     `;
+
+    // Toggle menu
+    const burger = document.getElementById("burger");
+    const nav = document.getElementById("headerNav");
+
+    burger.addEventListener("click", () => {
+        burger.classList.toggle("open");
+        nav.classList.toggle("open");
+    });
 }
+
 
 function renderFooter() {
     const footer = document.getElementById("footer");
@@ -80,7 +95,7 @@ function renderFooter() {
     footer.innerHTML = `
         <div class="footerHead">
             <div class="logo">
-            <svg width="204" height="48" viewBox="0 0 204 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="100%" height="48" viewBox="0 0 204 48" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M42.575 2.15414L43.3309 0.0754057C46.9505 -0.279977 47.757 0.655342 49.3781 2.15414L48.6222 5.17775C46.603 3.31204 45.372 2.46411 42.575 2.15414Z" fill="url(#paint0_linear_123_246)"/>
     <path d="M41.819 2.15414L42.575 0.0754057C38.4138 -0.0796507 36.4558 0.837821 33.1262 2.91002L33.6931 3.8549C36.6379 2.48122 38.3155 1.79283 41.819 2.15414Z" fill="url(#paint1_linear_123_246)"/>
     <path d="M32.7482 4.42183L31.9923 3.47695C28.7127 5.5623 27.2905 7.40104 24.6223 10.469L25.1892 11.6029C27.7073 8.23427 29.141 6.37427 32.7482 4.42183Z" fill="url(#paint2_linear_123_246)"/>
