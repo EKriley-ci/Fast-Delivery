@@ -1,0 +1,22 @@
+header{
+    background: #FFE9D9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+    nav{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-width: 15vw;
+        }
+    }
+}

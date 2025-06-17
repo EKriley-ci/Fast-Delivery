@@ -1,0 +1,87 @@
+.avisClient{
+    padding: 1rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .content{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .aside-content{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            h3{
+                color: $main-color;
+                font-size: 1.5rem;
+            }
+            h2{
+                color: $second-color;
+                font-weight: 100;
+                font-size: 1.7rem;
+            }
+
+            .reviewsContainer{
+                display: flex;
+                gap: 20px;
+                max-height: 160px;
+
+                .cleintsBox{
+                    max-height: fit-content;
+                    background: $white;
+                    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+                    padding: 2rem;
+                    border-radius: 20px;
+                    max-width: 600px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 10px;
+                    .profil{
+                        display: flex;
+                        gap: 5px;
+                        align-items: center;
+                        .img{
+                            height: 48px;
+                            width: 48px;
+                            border-radius: 50%;
+                            object-fit: cover;
+                            background: url(../../clients/MarieKone.png);
+                            background-size: contain;
+                            background-position: center;
+                            // background-repeat: no-repeat;    
+                        }
+                    }
+                    .message{
+                        font-size: 1.2rem;
+                        position: relative;
+                        display: flex;
+                        &::before{
+                            display: block;
+                            content: url(../../images/illustrations/quotte\ left.svg);
+                            margin-right: 7px;
+                        }
+                        &::after{
+                            display: block;
+                            content: url(../../images/illustrations/quotte\ rigth.svg);
+                            align-self: end;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+            }
+
+            .slide-controler{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                button{
+                    padding: 1rem;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}

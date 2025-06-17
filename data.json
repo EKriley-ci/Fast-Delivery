@@ -1,0 +1,79 @@
+{
+    "clients" : [
+        {
+          "name": "Marie Koné",
+          "photo": "./clients/MarieKone.png",
+          "rating": "./clients/JeanPaulTraorerate.svg",
+          "message": "Service super rapide et équipe très professionnelle ! Je recommande sans hésitation."
+        },
+        {
+          "name": "Jean-Paul Traoré",
+          "photo": "./clients/JeanPaulTraore.png",
+          "rating": "./clients/JeanPaulTraorerate.svg",
+          "message": "Livraison en moins de 24h comme promis. Bravo à toute l'équipe FAST DELIVERY."
+        },
+        {
+          "name": "Awa Diabaté",
+          "photo": "./clients/AwaDiabate.png",
+          "rating": "./clients/AwaDiabaterate.svg",
+          "message": "Très bonne communication et colis arrivé en parfait état. Merci !"
+        },
+        {
+          "name": "Samuel Kouadio",
+          "photo": "./clients/SamuelKouadio.png",
+          "rating": "./clients/SamuelKouadiorate.svg",
+          "message": "Excellent service client, suivi impeccable de mon colis jusqu’à la livraison."
+        },
+        {
+          "name": "Fatou Bamba",
+          "photo": "./clients/FatouBamba.png",
+          "rating": "./clients/FatouBambarate.svg",
+          "message": "Rapide, efficace et très professionnel. Je ferai encore appel à eux."
+        }
+      ],
+      "services" : [
+        {
+            "icon" : "./images/illustrations/To the stars-rafiki.svg",
+            "title" : "livraison expresse",
+            "desc" : "Livraison le jours même ou en 24h pour vos envois urgents"
+        },
+        {
+            "icon" : "./images/illustrations/Logistics-rafiki.svg",
+            "title" : "livraison standard",
+            "desc" : "une solution économique pour des livraison sous 3 à 5 jours"
+        },
+        {
+            "icon" : "./images/illustrations/Delivery-amico.svg",
+            "title" : "suivi en temps réel", 
+            "desc" : "suivez vos colis étaps par étaps grâce a notre platforme en ligne"
+
+        },
+        {
+            "icon" : "./images/illustrations/Coronavirus Delivery Preventions-amico.svg",
+            "title" : "services personnalisé",
+            "desc" : "gestion sur mesure pour entreprises, retours, logistique etc."
+        }
+      ],
+      "valeur" : [
+        {
+            "icon" : "./images/illustrations/Secure data-pana 1.svg",
+            "title" : "Fiabilité",
+            "desc" : "Nous honorons nos engagements pour garantir la satisfaction de nos clients."
+        },
+        {
+            "icon" : "./images/illustrations/Delivery-bro 1.svg",
+            "title" : "Rapidité",
+            "desc" : "Chaque minute compte : nous mettons tout en œuvre pour livrer dans les délais."
+        },
+        {
+            "icon" : "./images/illustrations/Take Away-pana 1.svg",
+            "title" : "Transparence",
+            "desc" : "Suivi clair et communication constante tout au long de la livraison."
+        },
+        {
+            "icon" : "./images/illustrations/Messenger-bro 1.svg",
+            "title" : "Écoute client",
+            "desc" : "Nous adaptons nos services aux besoins spécifiques de chacun."
+        }
+      ]
+}

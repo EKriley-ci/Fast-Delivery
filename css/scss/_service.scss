@@ -1,0 +1,26 @@
+.service{
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+    border-radius: 40px;
+    align-self: center;
+    justify-self: center;
+    box-shadow: 0 0 02px rgba(0, 0, 0, 0.288);
+    .textContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        h3{
+            color: $main-color;
+            font-size: 1.5rem;
+        }
+        h2{
+            color: $second-color;
+            font-size: 1.7rem;
+            font-weight: 100;
+
+            
+        }
+    }
+}
